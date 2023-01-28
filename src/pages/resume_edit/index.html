@@ -79,53 +79,91 @@
 								</div>
 							</div>
 						</div>
-						<div class="base_box pt-5 pb-2 border-top">
+						<div class="base_box pt-5 pb-2 border-top" id="companyExp">
 							<div class="base_title dx-flex d-row-between d-col-center mb-5">
 								<div class="base_title_item base_title_icon dx-flex ">
 									<div class="h4 text-body mb-0">工作经验</div>
 								</div>
-								<div class="base_title_item">
-
-								</div>
+								<div class="base_title_item"></div>
 							</div>
 							<div class="base_content">
-
-								<div class="form-group">
-									<label class="h6" for="position">工作职位</label>
-									<input type="text" class="form-control" name="position" id="position" placeholder=""
-										required>
-								</div>
-								<div class="form-group">
-									<label class="h6" for="company">公司名称</label>
-									<input type="text" class="form-control" name="company" id="company" placeholder=""
-										required>
-								</div>
-								<div class="form-group">
-									<div class="custom-control custom-checkbox mb-3">
-										<input type="checkbox" class="custom-control-input" id="working1" required>
-										<label class="custom-control-label h6" for="working1">我当前在这里工作</label>
+								<div class="content_model company_box shadow-sm" id="company1">  
+									<div class="form-group">
+										<label class="h6" for="position1">工作职位</label>
+										<input type="text" class="form-control" name="position1" id="position1" placeholder=""
+											required>
+									</div>
+									<div class="form-group">
+										<label class="h6" for="company1">公司名称</label>
+										<input type="text" class="form-control" name="company1" id="company1" placeholder=""
+											required>
+									</div>
+									<div class="form-group">
+										<div class="custom-control custom-checkbox mb-3">
+											<input type="checkbox" class="custom-control-input" name="working" id="working1" required>
+											<label class="custom-control-label h6" for="working1">我当前在这里工作</label>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-6 begin_div">
+											<label for="company_begin1">开始时间</label>
+											<input type="text" class="form-control" readonly name="company_begin1" id="company_begin1" placeholder="点击选择">
+										</div>
+										<div class="form-group col-md-6 end_div">
+											<label for="company_end1">结束时间</label>
+											<input type="text" class="form-control" readonly name="company_end1" id="company_end1" placeholder="点击选择">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="h6" for="desc1">工作描述</label>
+										<textarea class="form-control" id="desc1" name="desc1" rows="3" required></textarea> 
 									</div>
 								</div>
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="begin1">开始时间</label>
-										<input type="text" class="form-control"   id="begin1">
-									</div>
-									<div class="form-group col-md-6">
-										<label for="end1">结束时间</label>
-										<input type="text" class="form-control" readonly id="end1">
+								<div class="mt-5 mb-5 pt-4 pb-4 dx-flex d-row-center rounded add_model" role="button" id="addCompanyBtn">
+									<div class="text-theme h6 mb-0">
+										<i class="bi bi-bookmark-plus-fill"></i>
+										添加工作经验
 									</div>
 								</div>
-							</div>
+							</div> 
 						</div>
-						<div class="base_box pt-5 pb-2 border-top">
+						<div class="base_box pt-5 pb-2 border-top" id="schoolExp">
 							<div class="base_title dx-flex d-row-between d-col-center mb-5">
 								<div class="base_title_item base_title_icon dx-flex ">
 									<div class="h4 text-body mb-0">学历</div>
 								</div>
 								<div class="base_title_item"></div>
 							</div>
-							<div class="base_content"></div>
+							<div class="base_content">
+								<div class="content_model school_box shadow-sm animated fadeInLeft" id="school1"> 
+									<div class="form-group">
+										<label class="h6" for="school1">学校</label>
+										<input type="text" class="form-control" name="school1" id="school1" placeholder=""
+											required>
+									</div> 
+									<div class="form-group">
+										<label class="h6" for="class1">专业</label>
+										<input type="text" class="form-control" name="class1" id="class1" placeholder=""
+											required>
+									</div> 
+									<div class="form-row">
+										<div class="form-group col-md-6 begin_div">
+											<label for="school_begin1">开始时间</label>
+											<input type="text" class="form-control" readonly name="school_begin1" id="school_begin1" placeholder="点击选择">
+										</div>
+										<div class="form-group col-md-6 end_div">
+											<label for="school_end1">结束时间</label>
+											<input type="text" class="form-control" readonly name="school_end1" id="school_end1" placeholder="点击选择">
+										</div>
+									</div> 
+								</div>
+								<div class="mt-5 mb-5 pt-4 pb-4 dx-flex d-row-center rounded add_model" role="button" id="addSchoolBtn">
+									<div class="text-theme h6 mb-0">
+										<i class="bi bi-bookmark-plus-fill"></i>
+										添加教育经历
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="base_box pt-5 pb-2 border-top">
 							<div class="base_title dx-flex d-row-between d-col-center mb-5">
