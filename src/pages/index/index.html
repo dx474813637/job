@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+	<title>生意头条 - 生意宝</title>
+</head>
+
+<body>
+	<div class="header-index-w top_active" id="header">
+		<!-- 引入公共页头 -->
+		<%= require("html-loader!../common/header/index.html") %>
+
+	</div>
+	<%= require("html-loader!../common/fixed_btn/index.html") %>
+	<header class="header-w">
+
+		<div class="header-main">
+			<div class="header-swiper" id="headerSwiper">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide ">
+							<video width="100%" autoplay="autoplay" loop="loop" preload="" muted="muted"
+								src="http://dingxiang.netsun.testwebsite.cn/public/file/2042.mp4"
+								class="video1 video"></video>
+							<div class="swiper-content swiper-no-swiping dx-flex dx-col d-col-center d-row-center">
+								<div class="swiper-title mb-3">
+									让世界看到你的影响力
+								</div>
+								<div class="video-icon" data-toggle="modal" data-target="#videoModal">
+									<i class="bi bi-play-circle"></i>
+									<!-- <i class="custom-icon-play-circle custom-icon"></i> -->
+								</div>
+
+							</div>
+
+						</div>
+						<div class="swiper-slide">
+							<img src="/job/img/swiper-bg2.jpg" alt="">
+							<div class="swiper-content swiper-no-swiping dx-flex dx-col d-col-center d-row-center">
+								<div class="swiper-title mb-3">
+									让世界看到你的影响力
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="swiper-navi" id="swiperNavi">
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+
+
+	</header>
+	<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content" style="background: transparent; border: 0;">
+				<!-- <div class="modal-header">
+					<h5 class="modal-title" id="videoModalLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div> -->
+				<div class="modal-body">
+					<video width="100%" controls="true" preload="" muted="muted"
+						src="http://dingxiang.netsun.testwebsite.cn/public/file/2042.mp4" class="video1 video"></video>
+				</div>
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<main>
+		<div class="job-main-wrapper pb-4">
+
+			<div class="base_box pt-5 pb-2">
+				<div class="base_title dx-flex d-row-between d-col-center mb-5">
+					<div class="base_title_item base_title_icon dx-flex ">
+						<div class="h2 text-body mb-0">为什么选择网盛</div>
+					</div>
+					<div class="base_title_item"></div>
+				</div>
+				<div class="base_content base_content_col4 dx-flex d-col-top d-row-between">
+					<div class="base_content_item  dx-flex-1 dx-flex dx-col d-col-top">
+						<div class="base_content_item_title font-weight-bolder pb-4 h5 text-body ">智慧连接，美好生活</div>
+						<div class="base_content_item_sub pt-2 pb-2 h6">
+							网盛长期致力于社交平台与数字内容两大核心业务，积极拥抱产业互联网，努力成为各行各业数字化助手，通过连接，提升每一个人的生活品质。</div>
+					</div>
+					<div class="base_content_item  dx-flex-1 dx-flex dx-col d-col-top">
+						<div class="base_content_item_title font-weight-bolder pb-4 h5 text-body ">用行动关心你的成长</div>
+						<div class="base_content_item_sub pt-2 pb-2 h6">
+							这里有着富有挑战和影响力的工作内容，完备的职业培训和晋升体系，以及灵活的内部转岗机制，引领你发现更多可能。</div>
+					</div>
+					<div class="base_content_item  dx-flex-1 dx-flex dx-col d-col-top">
+						<div class="base_content_item_title font-weight-bolder pb-4 h5 text-body ">迎接每个特别的你</div>
+						<div class="base_content_item_sub pt-2 pb-2 h6">
+							自由包容的文化氛围让你自由发展，你的声音会被认真聆听，在这里，你遇到的不只是同事，更是并肩成长的伙伴</div>
+					</div>
+					<div class="base_content_item  dx-flex-1 dx-flex dx-col d-col-top">
+						<div class="base_content_item_title font-weight-bolder pb-4 h5 text-body ">福利关怀浸透你的生活</div>
+						<div class="base_content_item_sub pt-2 pb-2 h6">
+							你的努力会被铭记，你的付出会被真诚对待，舒适与科技融合的办公环境，极具竞争力的薪酬和激励体系，完善和个性化员工福利，只为回报你的尽心拼搏。</div>
+					</div>
+				</div>
+			</div>
+			<!-- 探索你的未来 -->
+			<div class="base_box pt-5 pb-2 discover">
+				<div class="base_title dx-flex d-row-between d-col-center mb-5">
+					<div class="base_title_item base_title_icon dx-flex ">
+						<div class="h2 text-body mb-0">探索你的未来</div>
+					</div>
+					<div class="base_title_item">
+						<div class="more_btn">
+							<a class="btn_wrap" href="/job/search.html" target="_blank">
+								<span class="top-text">探索</span>
+								<div class="container">
+									<span class="text text1">解</span>
+									<span class="text text2">锁</span>
+									<span class="text text3">更</span>
+									<span class="text text4">多</span>
+									<span class="text text5">职</span>
+									<span class="text text6">位</span>
+								</div>
+							</a>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="base_content base_content_col3 dx-flex d-col-top dx-flex-wrap">
+					<div class="base_content_item">
+						<a class="base_content_item_job shadow-sm p-4 text-body" href="/job/search.html" target="_blank">
+							<div class="job_row dx-flex d-row-between mb-4">
+								<div class="job_row_item">
+									<span class="job_name font-weight-bolder h5 mb-0">技术类</span>
+								</div>
+								<div class="job_row_item job-icon">
+									<i class="bi bi-justify-right text-primary"></i>
+								</div>
+							</div>
+							<div class="job_row dx-flex d-row-between">
+								<div class="job_row_item dx-flex d-col-baseline text-primary">
+									<span class="h6 mb-0 font-weight-bolder">了解更多</span>
+									<i class="small bi bi-chevron-right"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="base_content_item">
+						<a class="base_content_item_job shadow-sm p-4 text-body" href="/job/search.html" target="_blank">
+							<div class="job_row dx-flex d-row-between mb-4">
+								<div class="job_row_item">
+									<span class="job_name font-weight-bolder h5 mb-0">产品类</span>
+								</div>
+								<div class="job_row_item job-icon">
+									<i class="bi bi-justify-right text-primary"></i>
+								</div>
+							</div>
+							<div class="job_row dx-flex d-row-between">
+								<div class="job_row_item dx-flex d-col-baseline text-primary">
+									<span class="h6 mb-0 font-weight-bolder">了解更多</span>
+									<i class="small bi bi-chevron-right"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="base_content_item">
+						<a class="base_content_item_job shadow-sm p-4 text-body" href="/job/search.html" target="_blank">
+							<div class="job_row dx-flex d-row-between mb-4">
+								<div class="job_row_item">
+									<span class="job_name font-weight-bolder h5 mb-0">内容类</span>
+								</div>
+								<div class="job_row_item job-icon">
+									<i class="bi bi-justify-right text-primary"></i>
+								</div>
+							</div>
+							<div class="job_row dx-flex d-row-between">
+								<div class="job_row_item dx-flex d-col-baseline text-primary">
+									<span class="h6 mb-0 font-weight-bolder">了解更多</span>
+									<i class="small bi bi-chevron-right"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="base_content_item">
+						<a class="base_content_item_job shadow-sm p-4 text-body" href="/job/search.html" target="_blank">
+							<div class="job_row dx-flex d-row-between mb-4">
+								<div class="job_row_item">
+									<span class="job_name font-weight-bolder h5 mb-0">设计类</span>
+								</div>
+								<div class="job_row_item job-icon">
+									<i class="bi bi-justify-right text-primary"></i>
+								</div>
+							</div>
+							<div class="job_row dx-flex d-row-between">
+								<div class="job_row_item dx-flex d-col-baseline text-primary">
+									<span class="h6 mb-0 font-weight-bolder">了解更多</span>
+									<i class="small bi bi-chevron-right"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="base_content_item">
+						<a class="base_content_item_job shadow-sm p-4 text-body" href="/job/search.html" target="_blank">
+							<div class="job_row dx-flex d-row-between mb-4">
+								<div class="job_row_item">
+									<span class="job_name font-weight-bolder h5 mb-0">销售、服务与支持类</span>
+								</div>
+								<div class="job_row_item job-icon">
+									<i class="bi bi-justify-right text-primary"></i>
+								</div>
+							</div>
+							<div class="job_row dx-flex d-row-between">
+								<div class="job_row_item dx-flex d-col-baseline text-primary">
+									<span class="h6 mb-0 font-weight-bolder">了解更多</span>
+									<i class="small bi bi-chevron-right"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="base_content_item">
+						<a class="base_content_item_job shadow-sm p-4 text-body" href="/job/search.html" target="_blank">
+							<div class="job_row dx-flex d-row-between mb-4">
+								<div class="job_row_item">
+									<span class="job_name font-weight-bolder h5 mb-0">人力资源类</span>
+								</div>
+								<div class="job_row_item job-icon">
+									<i class="bi bi-justify-right text-primary"></i>
+								</div>
+							</div>
+							<div class="job_row dx-flex d-row-between">
+								<div class="job_row_item dx-flex d-col-baseline text-primary">
+									<span class="h6 mb-0 font-weight-bolder">了解更多</span>
+									<i class="small bi bi-chevron-right"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid job_nine_grid mt-5 mb-5">
+			<div class="row">
+				<div class="col-8 item_grid p-5 normal" style="background-image: url('/job/img/wall1.png');">
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">人才有活水，组织有活力</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						网盛的活水文化，可以让你在多个舞台挥洒激情、获得持续成长。网盛多元的业务布局会给你提供丰富的发展机会，所有工作机会都会对内部员工开放，只要工作满一年就可以自由申请内部转岗，每年都有1000+的网盛员工通过活水机制找到更适合自己的工作岗位。
+					</div>
+				</div>
+				<div class="col item_grid p-5 normal2" style="background-image: url('/job/img/wall3.png');">
+
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">网盛文化日</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						网盛文化日即鹅厂的生日（11月11日），这一天每个人都会穿上特色文化衫，集体为公司献上祝福。和团队一起拍创意合影，参与公司一波又一波的活动，收获满满的惊喜和感动。感谢你，选择成为网盛人。
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col item_grid p-5 normal3" style="background-image: url('/job/img/wall3.png');">
+
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">网盛志愿者</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						激发你内心的温情小宇宙，专业团队一起关爱老人、流浪动物、贫困学生等一切你想奉献爱的地方。还有网盛特色公益假，给你的爱心最强有力的支持和保护。
+					</div>
+
+				</div>
+				<div class="col item_grid p-5 normal4" style="background-image: url('/job/img/wall4.png');">
+
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">Tencent Talk</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						听陈晓卿、许知远等影响力大咖谈天说地，听内部同事分享的工作生活的体验和感悟，在这个分享和交流的平台里，改变人生轨迹的灵光也许就此闪现。
+					</div>
+
+				</div>
+				<div class="col item_grid p-5 normal5" style="background-image: url('/job/img/wall5.png');">
+
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">弹性工作制</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						从此告别上下班打卡，让你上班路上更淡定。还有灵活的调休机制，弹性工作制帮你更好的安排自己的生活。
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col item_grid p-5 normal" style="background-image: url('/job/img/wall6.png');">
+
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">家属开放日</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						这一天，你可以带着家人来上班，带爸妈来尝尝网盛食堂，带孩子在大厦空中运动场跑步。网盛的家属开放日，让家人更了解你的工作，分享在网盛的喜悦与成长。
+					</div>
+
+				</div>
+				<div class="col-8 item_grid p-5 normal6" style="background-image: url('/job/img/wall1.png');">
+
+					<div class="item_grid_title font-weight-bolder text-white h3 mb-4">Tencent Party</div>
+					<div class="item_grid_bg"></div>
+					<div class="item_grid_content text-white">
+						每年12月举行的Tencent
+						Party是鹅厂人最期待的盛会，有pony（马化腾）带队的高管天团火力全开，有一线明星的实力演出，还有热爱舞台的网盛人酣畅淋漓的展示，更有激动人心的抽奖时刻。在这天，你一定会为网盛人而骄傲自豪。
+					</div>
+
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col dx-flex d-col-center d-row-center">
+					<a href="/job/detail.html" class="dx-flex p-3 pl-5 pr-5 text-primary h6 font-weight-bolder shadow-sm rounded"
+						target="_blank">了解所有的网盛文化福利</a>
+				</div>
+			</div>
+		</div>
+		<div class="job-main-wrapper pb-4">
+
+			<div class="base_box pt-5 pb-2 jober-wall">
+				<div class="base_title dx-flex d-row-between d-col-center mb-5">
+					<div class="base_title_item base_title_icon dx-flex ">
+						<div class="h2 text-body mb-0">员工心声</div>
+					</div>
+					<div class="base_title_item"></div>
+				</div>
+				<div class="base_content">
+					<div class="swiper-container pt-4 pb-4" id="joberSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall1.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall2.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall3.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall4.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall5.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall6.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+							<div class="swiper-slide">
+								<div class="jober-wall-item dx-flex d-row-between">
+									<div class="item item-left">
+										<img src="/job/img/wall7.png" alt="">
+									</div>
+									<div class="item item-right p-4 dx-flex dx-col d-row-between d-col-top ">
+										<div class="jober-content swiper-no-swiping text-body">
+											和云南省政府合作的“游云南”app，让游客在云南旅游更智慧更舒心，也让我看到了网盛在产业互联网的实力和决心。
+										</div>
+										<div class="jober-info dx-flex ">
+											<div class="p-3">
+												<div class="info-avatar ">
+													<img src="/job/img/wall1.png" alt="">
+												</div>
+											</div>
+											<div class="info-name swiper-no-swiping">
+												<div class="h5 text-body mb-2">ABC</div>
+												<div class="info-sub text-black-50 small">
+													<p class="mt-1">高级CV工程师</p>
+													<p class="mt-1">云开发事业部</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>  
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

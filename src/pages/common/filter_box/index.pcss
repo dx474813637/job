@@ -1,0 +1,74 @@
+.filter_w {
+	& .filter_box {
+		& .filter_list {
+			& .filter_list_item {
+				/* overflow: hidden;  */
+				& .filter_list_more {  
+					display: none;
+				}
+				& .filter_title {
+					position: relative;
+					cursor: pointer;
+					height: 30px;
+					&:after {
+						content: '';
+						position: absolute;
+						width: 6px;
+						height: 6px;
+						border-radius: 5px;
+						background: var(--theme-color);
+						top: 50%;
+						transform: translateY(-2px);
+						left: 5px;
+						opacity: 0;
+						transition: opacity .3s
+					}
+					& .filter_title_text {
+						transition: all .3s;
+					}
+					& .more_icon {
+						position: relative;
+						width: 15px;
+						height: 15px;
+						&::before,
+						&::after {
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							margin: auto; 
+							background: var(--theme-color);
+							transition: all .3s;
+						}
+						&::before {
+							width: 100%;
+							height: 2px;
+						}
+						&::after {
+							height: 100%;
+							width: 2px;
+						}
+					}
+				}
+				&.active {  
+					&>.filter_title {
+						&:after {
+							opacity: 1;
+						}
+						
+						& .filter_title_text {
+							transform: translateX(20px)
+						}
+						& .more_icon {
+							&::after {
+								opacity: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

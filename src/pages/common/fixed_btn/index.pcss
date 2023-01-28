@@ -1,0 +1,25 @@
+.fixed_btns {
+	& .fixed-w {
+		position: fixed;
+		right: 20px;
+		bottom: 120px;
+		width: 50px;
+		padding: 20px 0;
+		z-index: 100;
+		& .item-btn {
+			padding: 8px;
+			font-size: 24px;
+			margin-bottom: 5px;
+			color: var(--theme-color);
+			border-radius: 50%;
+			transition: all .3s;
+			cursor: pointer;
+			&.totop-btn {
+				display: none
+			}
+			&:hover {
+				background-color: #f8f8f8;
+			}
+		}
+	}
+}

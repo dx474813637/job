@@ -1,0 +1,80 @@
+main {
+	min-height: 100vh;
+	padding-bottom: 50px;
+	padding-top: var(--header-nav-h);
+	& .addr_list {
+		& .addr_item {
+			flex: 0 0 50%;
+			padding: 20px;
+			height: 350px;
+			&:nth-of-type(2n) {
+				padding-right: 0;
+			}
+			&:nth-of-type(2n + 1) {
+				padding-left: 0;
+			}
+			& .addr_card {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				z-index: 15;
+				padding: 20px;
+				background-color: #fff;
+				border-radius: 10px;
+				&:hover {
+					& .addr_card_bg {
+						height: calc(100% - 70px);
+						border-radius: 10px 10px 0 0;
+						&:after {
+							opacity: 1
+						}
+					}
+					& .addr_card_footer a {
+						color: var(--theme-color)
+					}
+				}
+				& .addr_card_bg {
+					position: absolute;
+					left: 0;
+					border-radius: 10px;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 10;
+					transition: all .5s;
+					overflow: hidden; 
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center center;
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						background-color: rgba(0,0,0,.3);
+						opacity: 0;
+						transition: all .3s;
+						z-index: 10;
+					}
+				}
+				& .addr_card_header {
+					position: relative;
+					z-index: 15;
+				}
+				& .addr_card_footer {
+					position: relative;
+					z-index: 15;
+					& a {
+						color: #fff;
+						transition: all .3s;
+						&:hover {
+							color: var(--theme-color)
+						}
+					}
+				}
+			}
+		}
+	}
+}

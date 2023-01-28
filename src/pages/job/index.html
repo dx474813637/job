@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ch">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"
+		/>
+		<title>生意头条 - 生意宝</title>
+	</head>
+	<body>
+		<!-- 引入公共页头 -->
+		<%= require("html-loader!../common/header/index.html") %>
+		<main>
+			<div class="main-container dx-flex d-col-top pt-4">
+				<div class="screen-main pr-3">
+					<div class="main-title">
+						金融科技后台开发（java）
+					</div>
+					<div class="job_label dx-flex dx-flex-wrap d-col-top mt-3 text-dark">
+						<div class="job_label_item h6">
+							<span class="job_label_item_text">CDG</span>
+						</div>
+						<div class="job_label_item h6">
+							<span class="job_label_item_text">社会招聘</span>
+						</div>
+						<div class="job_label_item h6">
+							<span class="job_label_item_text">技术类</span>
+						</div>
+						<div class="job_label_item h6">
+							<span class="job_label_item_text">深圳</span>
+							<span class="job_label_item_text">杭州</span> 
+						</div>  
+						<div class="job_label_item h6">
+							<span class="job_label_item_text">2023年1月1日</span> 
+						</div> 
+					</div>
+					<div class="main-content mt-4">
+						<p class="h4 section_title text-body mt-4">工作职责</p>
+						<p class="section_text">1、负责金融科技反洗钱与风控系统的开发及维护</p>
+						<p class="section_text">2、能在合适场景，利用大数据、机器学习的技术，提升开发与运营效率。</p>
+						<p class="h4 section_title text-body mt-4">工作要求</p>
+						<p class="section_text">1、本科及以上学历，5年以上java语言使用经验，熟悉java的使用和原理；</p>
+						<p class="section_text">2、熟悉SpringCloud等微服务架构体系；</p> 
+						<p class="section_text">3、熟悉SQL语言，有MySQL的使用经验，对于分库分表的相关问题有较好的理解；</p> 
+						<p class="section_text">4、具备较强的需求理解与分析能力，熟悉UML、设计模式、重构、DDD等软件工程方法论；</p> 
+						<p class="section_text">5、有工作流引擎（比如Activiti、jBPM）等应用经验者优先；</p> 
+						<p class="section_text">6、有规则引擎（比如Drools）应用经验者优先；</p> 
+						<p class="section_text">7、有较强的沟通能力，有良好的团队协作精神。</p> 
+						<p class="h4 section_title text-body mt-4">联系方式</p>
+						<p class="section_text">简历投递邮箱：email@netsun.com</p>
+						<p class="section_text">总部联系电话：0571-88228162</p>
+						<p class="section_text">办事处联系方式：<a href="http://www.netsun.com/contact.html" target="_blank">http://www.netsun.com/contact.html</a></p>
+						
+					</div> 
+					<div class="pt-4 pb-4">
+						<a href="/job/resume_edit/html" target="_blank" class="d-block">
+							<button type="button" class="btn btn-primary btn-lg">
+								<i class="bi bi-box-arrow-up"></i>
+								投递简历
+							</button>
+						</a>
+						
+					</div>
+				</div> 
+				<div class="screen-aside">
+					<%= require("html-loader!../common/sections_box/detailAside.html") %>
+				</div>
+			</div>
+		</main>
+		<%= require("html-loader!../common/footer/index.html") %>
+		<%= require("html-loader!../common/fixed_btn/index.html") %>
+	</body>
+</html>

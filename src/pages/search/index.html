@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+	<title>生意头条 - 生意宝</title>
+</head>
+
+<body>
+	<!-- 引入公共页头 -->
+	<%= require("html-loader!../common/header/index.html") %>
+	<main>
+		<div class="main-container dx-flex d-col-top pt-1">
+			<div class="screen-aside pr-3">
+				<div class="h4 text-dark pt-3 pb-3 mb-0 ">
+					过滤条件
+				</div>
+				<div>
+					<%= require("html-loader!../common/filter_box/index.html") %>
+				</div>
+			</div>
+			<div class="screen-main pl-3">
+				<div class="dx-flex d-row-between pt-3 pb-3 ">
+					<div class="item">
+						<div class="h4 text-dark mb-0">
+							最新发布
+						</div>
+					</div>
+					<div class="item">
+						<span>显示 1-10 ，共1374职位</span>
+					</div>
+				</div>
+				<div class="filter_key_w dx-flex d-col-top mb-4">
+					<div class="filter_key_list dx-flex dx-flex-wrap d-col-top text-dark" id="filterKeyList">
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>搜索：后台开发</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>岗位-技术研发</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>岗位-技术运营</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>岗位-安全技术</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>岗位-游戏美术</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>地点-杭州</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>地点-上海</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+						<div class="item">
+							<div class="key rounded pl-3 pr-2 dx-flex">
+								<span>事业群-CDG企业发展</span>
+								<i class="ml-2 bi bi-x h5 mb-0"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter_key_tools dx-flex d-row-right text-theme">
+						<div class="tools-btn" id="moreKeyBtn">展开</div>
+						<div class="ml-3 tools-btn" id="clearAllKeyBtn">清除所有</div>
+					</div>
+				</div>
+
+
+				<%= require("html-loader!../common/job_list/index.html") %>
+
+				<div class="mt-5">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-end">
+							<li class="page-item disabled">
+								<a class="page-link">&laquo;</a>
+							</li>
+							<li class="page-item active"><a class="page-link " href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">&raquo;</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<%= require("html-loader!../common/footer/index.html") %>
+	<%= require("html-loader!../common/fixed_btn/index.html") %>
+</body>
+
+</html>

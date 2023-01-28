@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+	<title>生意头条 - 生意宝</title>
+</head>
+
+<body>
+	<!-- 引入公共页头 -->
+	<%= require("html-loader!../common/header/index.html") %>
+	<main>
+		<div class="main-container dx-flex d-col-top pt-4">
+			<div class="screen-main pr-3">
+				<div class="main-title">
+					金融科技后台开发（java）
+				</div>
+				<div class="job_label dx-flex dx-flex-wrap d-col-top mt-3 text-dark">
+					<div class="job_label_item h6">
+						<span class="job_label_item_text">CDG</span>
+					</div>
+					<div class="job_label_item h6">
+						<span class="job_label_item_text">社会招聘</span>
+					</div>
+					<div class="job_label_item h6">
+						<span class="job_label_item_text">技术类</span>
+					</div>
+					<div class="job_label_item h6">
+						<span class="job_label_item_text">深圳</span>
+						<span class="job_label_item_text">杭州</span>
+					</div>
+					<div class="job_label_item h6">
+						<span class="job_label_item_text">2023年1月1日</span>
+					</div>
+				</div>
+				<div class="main-content mt-4">
+					<form action="" id="resume">
+						<div class="base_box pt-5 pb-2 border-top">
+							<div class="base_title dx-flex d-row-between d-col-center mb-5">
+								<div class="base_title_item base_title_icon dx-flex ">
+									<div class="h4 text-body mb-0">简历附件</div>
+								</div>
+								<div class="base_title_item"></div>
+							</div>
+							<div class="base_content">
+							</div>
+						</div>
+						<div class="base_box pt-5 pb-2 border-top">
+							<div class="base_title dx-flex d-row-between d-col-center mb-5">
+								<div class="base_title_item base_title_icon dx-flex ">
+									<div class="h4 text-body mb-0">基础信息</div>
+								</div>
+								<div class="base_title_item"></div>
+							</div>
+							<div class="base_content">
+
+								<div class="form-group">
+									<label class="h6" for="name">姓名</label>
+									<input type="text" class="form-control" name="name" id="name"
+										aria-describedby="nameHelpBlock" placeholder="姓名" required>
+									<small id="nameHelpBlock" class="form-text text-muted">有效证件上的全名</small>
+								</div>
+								<div class="form-group">
+									<label class="h6" for="addr">当前居住省/市</label>
+									<input type="text" class="form-control" name="addr" id="addr" placeholder="省/市"
+										required>
+								</div>
+								<div class="form-group">
+									<label class="h6" for="phone">手机号</label>
+									<input type="text" class="form-control" name="phone" id="phone" placeholder="手机号"
+										required>
+								</div>
+								<div class="form-group">
+									<label class="h6" for="email">邮箱</label>
+									<input type="email" class="form-control" name="email" id="email" placeholder="邮箱"
+										required>
+								</div>
+							</div>
+						</div>
+						<div class="base_box pt-5 pb-2 border-top">
+							<div class="base_title dx-flex d-row-between d-col-center mb-5">
+								<div class="base_title_item base_title_icon dx-flex ">
+									<div class="h4 text-body mb-0">工作经验</div>
+								</div>
+								<div class="base_title_item">
+
+								</div>
+							</div>
+							<div class="base_content">
+
+								<div class="form-group">
+									<label class="h6" for="position">工作职位</label>
+									<input type="text" class="form-control" name="position" id="position" placeholder=""
+										required>
+								</div>
+								<div class="form-group">
+									<label class="h6" for="company">公司名称</label>
+									<input type="text" class="form-control" name="company" id="company" placeholder=""
+										required>
+								</div>
+								<div class="form-group">
+									<div class="custom-control custom-checkbox mb-3">
+										<input type="checkbox" class="custom-control-input" id="working1" required>
+										<label class="custom-control-label h6" for="working1">我当前在这里工作</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="begin1">开始时间</label>
+										<input type="text" class="form-control"   id="begin1">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="end1">结束时间</label>
+										<input type="text" class="form-control" readonly id="end1">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="base_box pt-5 pb-2 border-top">
+							<div class="base_title dx-flex d-row-between d-col-center mb-5">
+								<div class="base_title_item base_title_icon dx-flex ">
+									<div class="h4 text-body mb-0">学历</div>
+								</div>
+								<div class="base_title_item"></div>
+							</div>
+							<div class="base_content"></div>
+						</div>
+						<div class="base_box pt-5 pb-2 border-top">
+							<div class="base_title dx-flex d-row-between d-col-center mb-5">
+								<div class="base_title_item base_title_icon dx-flex ">
+									<div class="h4 text-body mb-0">补充信息</div>
+								</div>
+								<div class="base_title_item"></div>
+							</div>
+							<div class="base_content"></div>
+						</div>
+						<div class="base_box pt-5 pb-2 border-top">
+							<div class="base_title dx-flex d-row-between d-col-center mb-5">
+								<div class="base_title_item base_title_icon dx-flex ">
+									<div class="h4 text-body mb-0">作品或其他附件</div>
+								</div>
+								<div class="base_title_item"></div>
+							</div>
+							<div class="base_content"></div>
+						</div>
+					</form>
+
+				</div>
+				<div class="pt-4 pb-4">
+					<button type="button" class="btn btn-primary btn-lg">
+						<i class="bi bi-box-arrow-up"></i>
+						投递简历
+					</button>
+				</div>
+			</div>
+			<div class="screen-aside">
+
+			</div>
+		</div>
+	</main>
+	<%= require("html-loader!../common/footer/index.html") %>
+	<%= require("html-loader!../common/fixed_btn/index.html") %>
+</body>
+
+</html>
