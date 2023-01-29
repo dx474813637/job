@@ -58,3 +58,12 @@ if (document.addEventListener) {//firefox
     //滚动滑轮触发scrollFunc方法  //ie 谷歌
     window.onmousewheel = scrollFunc;
 }
+
+
+$('#mMenusBtn').on('click', function() {
+    if($('.header-fixed-w.m').hasClass('active')) {
+        $('.header-fixed-w.m').removeClass('active')
+    }else {
+        $('.header-fixed-w.m').addClass('active')
+    }
+})

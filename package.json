@@ -48,6 +48,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
+    "bootstrap-fileinput": "^5.5.2",
     "bootstrap-icons": "^1.10.3",
     "jquery": "^3.5.1",
     "jquery-lazyload": "^1.9.7",

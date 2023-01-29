@@ -3,6 +3,9 @@
 	--header-left: 300px;
 	--header-right: 300px;
 
+	@media (max-width: 768px) {
+		display: none;
+	}
 	& .bg_mask {
 		background-image: url("/job/img/netsun.jpg");
 		background-size: cover;
@@ -29,12 +32,14 @@
 			& .item-left {
 				flex: 0 0 var(--header-left);
 				width: var(--header-left);
+				 
 			}
-			& .item-center {
+			& .item-center { 
 			}
 			& .item-right {
 				flex: 0 0 var(--header-right);
 				width: var(--header-right);
+				 
 			}
 			& .nav_table {
 				& .nav_table_item {
@@ -72,7 +77,7 @@
 			}
 		}
 		& .footer_content_bottom {
-			border-color: #353252 !important;
+			border-color: #353252 !important; 
 			& a {
 				color: #595e6f;
 			}
