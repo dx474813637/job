@@ -63,7 +63,13 @@ if (document.addEventListener) {//firefox
 $('#mMenusBtn').on('click', function() {
     if($('.header-fixed-w.m').hasClass('active')) {
         $('.header-fixed-w.m').removeClass('active')
+        $('body').removeClass('no-scroll')
     }else {
         $('.header-fixed-w.m').addClass('active')
+        $('body').addClass('no-scroll')
     }
+})
+
+$('#menusMask').on('click', function() {
+    $('#mMenusBtn').trigger('click')
 })

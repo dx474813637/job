@@ -3,7 +3,8 @@ body {
 }
 
 .header-index-w {
-	& .header-fixed-w {}
+	& .header-fixed-w {
+	}
 
 	&.top_active .header-fixed-w {
 		--header-bg: transparent;
@@ -11,26 +12,46 @@ body {
 		--nav-active-color: #fff;
 		--nav-hover-color: #fff;
 		--nav-hover-border-color: #fff;
-		--search-bg: rgba(255, 255, 255, .3);
-		--search-border: rgba(255, 255, 255, .2);
+		--search-bg: rgba(255, 255, 255, 0.3);
+		--search-border: rgba(255, 255, 255, 0.2);
 		--search-icon: #eee;
 		--search-border-active: #fff;
 		--search-text: #fff;
 		--search-placeholder-text: #ccc;
 		--search-more-text: #fff;
 		--header-shadow: none;
- 
+		&.active {
+			& .item {
+				& .mMenusBtn {
+					& .mMenusBtn_1,
+					& .mMenusBtn_3 {
+						background: #000;
+					}
+				}
+			}
+		}
+
+		& .item {
+			& .mLoginBtn,
+			& .mMenusBtn {
+				color: #fff;
+				& .mMenusBtn_1,
+				& .mMenusBtn_2,
+				& .mMenusBtn_3 {
+					background-color: #fff;
+				}
+			}
+		}
 	}
 }
 
 #swiperNavi {
-
 	& .swiper-button-next,
 	& .swiper-button-prev {
 		/* position: absolute */
 		top: calc(50% + 60px);
-		opacity: .4;
-		transition: all .3s;
+		opacity: 0.4;
+		transition: all 0.3s;
 
 		&::after {
 			font-size: 24px;
@@ -38,16 +59,16 @@ body {
 
 		&:hover {
 			opacity: 1;
-			transform: scale(1.2)
+			transform: scale(1.2);
 		}
 	}
 
 	& .swiper-button-next {
-		right: calc((100vw - var(--main-w))/4)
+		right: calc((100vw - var(--main-w)) / 4);
 	}
 
 	& .swiper-button-prev {
-		left: calc((100vw - var(--main-w))/4)
+		left: calc((100vw - var(--main-w)) / 4);
 	}
 }
 
@@ -95,11 +116,11 @@ body {
 
 						& .swiper-title {
 							font-size: 50px;
-							color: #FFFFFF;
+							color: #ffffff;
 							text-align: center;
 							line-height: 50px;
 							font-style: oblique;
-							padding: .5em 0;
+							padding: 0.5em 0;
 						}
 
 						& .video-icon {
@@ -125,8 +146,8 @@ body {
 			height: 45px;
 			padding: 0 15px;
 
-			& .item-left>.item,
-			& .item-right>.item {
+			& .item-left > .item,
+			& .item-right > .item {
 				color: #ccc;
 				position: relative;
 
@@ -176,7 +197,7 @@ body {
 					display: block;
 				}
 
-				&>a:hover {
+				& > a:hover {
 					color: #fff;
 				}
 			}
@@ -242,7 +263,6 @@ body {
 
 			& .header-content-search-w {
 				width: 700px;
-
 			}
 		}
 	}
@@ -324,7 +344,8 @@ body {
 						}
 
 						& .info-name {
-							& .info-sub {}
+							& .info-sub {
+							}
 						}
 					}
 				}

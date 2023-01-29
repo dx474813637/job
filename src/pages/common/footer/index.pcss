@@ -3,9 +3,6 @@
 	--header-left: 300px;
 	--header-right: 300px;
 
-	@media (max-width: 768px) {
-		display: none;
-	}
 	& .bg_mask {
 		background-image: url("/job/img/netsun.jpg");
 		background-size: cover;
@@ -19,7 +16,7 @@
 	}
 	& .footer_logo {
 		-webkit-filter: grayscale(100%) brightness(500%);
-		        filter: grayscale(100%) brightness(500%);
+		filter: grayscale(100%) brightness(500%);
 		height: 60px;
 	}
 	& .footer_content {
@@ -29,17 +26,31 @@
 		& .footer_content_header {
 			height: 300px;
 			padding-top: 20px;
+			@media (max-width: 768px) {
+				--header-left: 100%;
+				height: auto;
+				padding-bottom: 40px;
+				& .item-left {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
 			& .item-left {
 				flex: 0 0 var(--header-left);
 				width: var(--header-left);
-				 
 			}
-			& .item-center { 
+			& .item-center {
+				@media (max-width: 768px) {
+					display: none;
+				}
 			}
 			& .item-right {
 				flex: 0 0 var(--header-right);
 				width: var(--header-right);
-				 
+				@media (max-width: 768px) {
+					display: none;
+				}
 			}
 			& .nav_table {
 				& .nav_table_item {
@@ -77,7 +88,10 @@
 			}
 		}
 		& .footer_content_bottom {
-			border-color: #353252 !important; 
+			border-color: #353252 !important;
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
 			& a {
 				color: #595e6f;
 			}
