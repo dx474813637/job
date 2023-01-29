@@ -1,5 +1,5 @@
 {
-  "name": "multi-static-pages-webpackproj",
+  "name": "dx",
   "version": "1.0.0",
   "description": "使用webpack搭建的多页应用程序工程",
   "main": "index.js",
