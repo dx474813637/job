@@ -4,7 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/assets/global.pcss";
 import "./index.pcss";
 
-$('#filterList').on('click', '.filter_title', function (event) {
+$('#filterList, #mfilterList').on('click', '.filter_title', function (event) {
     let targetDom = $(event.target);
     // let domType = targetDom.prop('type') 
     let domName = targetDom.prop('tagName')
@@ -28,7 +28,7 @@ $('#filterList').on('click', '.filter_title', function (event) {
         listMore.slideDown()
     }
 })
-$('#filterList').on('change', 'input[type=checkbox]', function (event) { 
+$('#filterList, #mfilterList').on('change', 'input[type=checkbox]', function (event) {  
     if (!$(this).parent().parent().hasClass('filter_list_more')) {
         let listMore = $(this).closest('.filter_list_item').children('.filter_list_more');
         let boxChildren = listMore.find('input[type=checkbox]') 
@@ -61,4 +61,16 @@ $('#filterList').on('change', 'input[type=checkbox]', function (event) {
         } 
     }
 
+})
+
+$('#backBtn').on('click', function() {
+    $('#mFilterBox').removeClass('active')
+    $('body').removeClass('no-scroll')
+})
+
+$('#confirmBtn').on('click', function() {
+    $('#backBtn').trigger('click')
+})
+$('#resetBtn').on('click', function() {
+    $('#backBtn').trigger('click')
 })

@@ -310,6 +310,9 @@ body {
 		padding: 10px;
 	}
 	& .base_title {
+		@media (max-width: 768px) {
+			margin-bottom: 30px!important;
+		}
 		& .base_title_item {
 			position: relative;
 			@media (max-width: 768px) {
@@ -348,7 +351,7 @@ body {
 		&.base_content_col2 {
 			& .base_content_item {
 				flex: 0 0 50%;
-
+				
 				&:nth-of-type(2n) {
 					padding-right: 0;
 				}
@@ -389,7 +392,7 @@ body {
 		&.base_content_col4 {
 			@media (max-width: 768px) {
 				flex-wrap: wrap;
-				padding: 10px;
+				padding: 0px;
 				& .base_content_item {
 					flex: 0 0 100%;
 					padding: 0;
@@ -423,20 +426,34 @@ body {
 					display: block;
 					transition: all 0.3s;
 					background: #fff;
+					@media (max-width: 768px) {
+						padding: 12px!important; 
+						& .job_name {
+							font-size: 17px;
+						}
+					}
 					&:hover {
 						transform: translateY(-8px);
-
+						@media (max-width: 768px) {
+							transform: translateY(0);
+						}
 						& .job_name {
 							color: var(--theme-color);
 						}
 					}
 
 					& .job_row {
+						@media (max-width: 768px) {
+							margin-bottom: 10px!important;
+							&:last-child {
+								margin-bottom: 0!important;
+							}
+						}
 						& .job_row_item {
 							&.job-icon {
 								& .custom-icon,
 								& .bi {
-									font-size: 24px;
+									font-size: 24px; 
 								}
 							}
 						}

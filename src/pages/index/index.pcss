@@ -3,8 +3,7 @@ body {
 }
 
 .header-index-w {
-	& .header-fixed-w {
-	}
+	& .header-fixed-w {}
 
 	&.top_active .header-fixed-w {
 		--header-bg: transparent;
@@ -20,9 +19,11 @@ body {
 		--search-placeholder-text: #ccc;
 		--search-more-text: #fff;
 		--header-shadow: none;
+
 		&.active {
 			& .item {
 				& .mMenusBtn {
+
 					& .mMenusBtn_1,
 					& .mMenusBtn_3 {
 						background: #000;
@@ -32,9 +33,11 @@ body {
 		}
 
 		& .item {
+
 			& .mLoginBtn,
 			& .mMenusBtn {
 				color: #fff;
+
 				& .mMenusBtn_1,
 				& .mMenusBtn_2,
 				& .mMenusBtn_3 {
@@ -46,6 +49,7 @@ body {
 }
 
 #swiperNavi {
+
 	& .swiper-button-next,
 	& .swiper-button-prev {
 		/* position: absolute */
@@ -121,6 +125,9 @@ body {
 							line-height: 50px;
 							font-style: oblique;
 							padding: 0.5em 0;
+							@media (max-width: 768px) {
+								font-size: 24px;
+							}
 						}
 
 						& .video-icon {
@@ -129,6 +136,9 @@ body {
 							& .custom-icon,
 							& .bi {
 								font-size: 45px;
+								@media (max-width: 768px) {
+									font-size: 30px;
+								}
 							}
 						}
 					}
@@ -146,8 +156,8 @@ body {
 			height: 45px;
 			padding: 0 15px;
 
-			& .item-left > .item,
-			& .item-right > .item {
+			& .item-left>.item,
+			& .item-right>.item {
 				color: #ccc;
 				position: relative;
 
@@ -197,7 +207,7 @@ body {
 					display: block;
 				}
 
-				& > a:hover {
+				&>a:hover {
 					color: #fff;
 				}
 			}
@@ -271,6 +281,9 @@ body {
 #joberSwiper {
 	height: 400px;
 
+	@media (max-width: 768px) {
+		height: 500px;
+	}
 	& .swiper-button-next,
 	& .swiper-button-prev {
 		background: rgba(0, 0, 0, 0.2);
@@ -298,14 +311,28 @@ body {
 			width: 100%;
 			height: 100%;
 
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+				align-items: flex-start
+			}
+
 			& .item {
 				height: 100%;
 
 				&.item-left {
 					flex: 0 0 calc(100% - 400px);
+
+					@media (max-width: 768px) {
+						flex: 0 0 100%;
+					}
+
 					position: relative;
 					height: 100%;
 					overflow: hidden;
+
+					@media (max-width: 768px) {
+						height: 200px;
+					}
 
 					& img {
 						position: absolute;
@@ -316,6 +343,11 @@ body {
 						margin: auto;
 						min-width: 100%;
 						min-height: 100%;
+
+						@media (max-width: 768px) {
+							width: 100%;
+							height: 100%;
+						}
 					}
 				}
 
@@ -323,12 +355,21 @@ body {
 					flex: 0 0 400px;
 					background: #fff;
 
-					& .jober-content {
-						line-height: 1.5em;
-						text-indent: 2em;
+					@media (max-width: 768px) {
+						flex: 0 0 100%;
+						height: auto;
 					}
 
-					& .jober-info {
+					& .jober-content {
+						line-height: 1.5em;
+
+						@media (max-width: 768px) {
+							line-height: 1.5;
+							font-size: 16px;
+						}
+					}
+
+					& .jober-info { 
 						& .info-avatar {
 							overflow: hidden;
 							border-radius: 30px;
@@ -337,6 +378,12 @@ body {
 
 							border: 3px solid var(--theme-color);
 
+							@media (max-width: 768px) {
+
+								width: 46px;
+								height: 46px;
+							}
+
 							& img {
 								width: 100%;
 								height: 100%;
@@ -344,7 +391,18 @@ body {
 						}
 
 						& .info-name {
+							@media (max-width: 768px) {
+								font-size: 14px !important;
+							}
+
 							& .info-sub {
+								@media (max-width: 768px) {
+									display: flex
+								}
+
+								&>p {
+									margin-bottom: 0
+								}
 							}
 						}
 					}

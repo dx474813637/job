@@ -71,6 +71,10 @@ const mySwiper = new Swiper("#headerSwiper .swiper-container", {
 		},
 	},
 });
+let slidesPerView = 3;
+if($(window).width() <= 768) {
+	slidesPerView = 1
+}
 const joberSwiper = new Swiper("#joberSwiper", {
 	pagination: {
 		el: "#joberSwiper .swiper-pagination", // 分页器
@@ -80,7 +84,7 @@ const joberSwiper = new Swiper("#joberSwiper", {
 		nextEl: "#joberSwiper .swiper-button-next",
 		prevEl: "#joberSwiper .swiper-button-prev",
 	},
-	slidesPerView: 3,
+	slidesPerView: slidesPerView,
 	spaceBetween: 30,
 	centeredSlides: true, 
 	initialSlide: 1,

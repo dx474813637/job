@@ -7,9 +7,20 @@ main {
 	min-height: 80vh;
 	padding-bottom: 50px;
 	padding-top: var(--header-nav-h);
+    & .main-container {
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+    }
 	& .screen-main {
 		width: calc(100% - var(--aside-right-width));
 		flex: 0 0 calc(100% - var(--aside-right-width));
+        @media (max-width: 768px) {
+            width: 100%;
+            flex: 0 0 100%;
+            padding: 0!important;
+        }
         & .main-title {
             font-weight: bold;
             color: #000;
@@ -89,6 +100,11 @@ main {
 	& .screen-aside {
 		width: var(--aside-right-width);
 		flex: 0 0 var(--aside-right-width);
+        @media (max-width: 768px) {
+            width: 100%;
+            flex: 0 0 100%;
+            padding: 0!important;
+        }
 	}
 }
 .content_model {

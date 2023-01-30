@@ -87,7 +87,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // 打包 css 代码 到文件中
       filename: "css/[name].css",
-      chunkFilename: "css/common.[hash:5].css" // 针对公共样式的文件名
+      chunkFilename: "css/common.[id].[hash:5].css" // 针对公共样式的文件名
     }),
   ],
 };

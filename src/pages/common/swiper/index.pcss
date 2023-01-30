@@ -2,13 +2,16 @@ body {
 	--swiper-h: 300px;
 	--swiper-theme-color: #fff;
 }
+
 .main-header {
 	width: 100%;
 	height: var(--swiper-h);
 	position: relative;
+
 	& .main-swiper {
 		width: 100%;
 		height: 100%;
+
 		& .swiper-pagination-bullet {
 			background: #fff;
 		}
@@ -26,11 +29,12 @@ body {
 					display: flex;
 					align-items: center;
 
+ 
 					& img,
 					& video {
 						width: 100%;
 						min-height: 100%;
-					}
+					} 
 
 					& .swiper-content {
 						position: absolute;
@@ -61,6 +65,7 @@ body {
 							}
 						}
 					}
+
 					& .slide-content-w {
 						position: absolute;
 						width: calc(var(--main-w) / 2);
@@ -68,21 +73,41 @@ body {
 						top: 0;
 						left: calc(50% - var(--main-w) / 2);
 						padding-right: 100px;
+
+						@media (max-width: 768px) {
+							left: 0; 
+							padding-right: 0;
+							width: 80vw;
+							padding-left: 20px;
+						}
 						& .slide-content {
 							width: 100%;
 							height: 100%;
 							position: relative;
 							z-index: 10;
+
 							& .slide-content-title {
 								-webkit-animation-delay: 0.2s;
-								        animation-delay: 0.2s;
+								animation-delay: 0.2s;
 							}
+
 							& .slide-content-sub {
 								-webkit-animation-delay: 0.6s;
-								        animation-delay: 0.6s;
+								animation-delay: 0.6s;
 								line-height: 1.5;
+								@media (max-width: 768px) {
+									&>p {
+										text-overflow: ellipsis;
+										display: -webkit-box;
+										-webkit-box-orient: vertical;
+										overflow: hidden;
+										line-height: 1.5;
+										-webkit-line-clamp: 4;
+									}
+								}
 							}
 						}
+
 						& .slide-content-bg1,
 						& .slide-content-bg2 {
 							position: absolute;
@@ -90,6 +115,7 @@ body {
 							height: 100%;
 							top: 0;
 							left: 0;
+
 							&:before {
 								content: "";
 								position: absolute;
@@ -99,15 +125,18 @@ body {
 								transform: skew(-10deg);
 							}
 						}
+
 						& .slide-content-bg1 {
 							-webkit-animation-delay: 0.3s;
-							        animation-delay: 0.3s;
+							animation-delay: 0.3s;
+
 							&:before {
 								background-color: rgb(0 247 255 / 70%);
 								left: -100px;
 								z-index: 1;
 							}
 						}
+
 						& .slide-content-bg2 {
 							&:before {
 								background-color: rgb(0 122 255 / 70%);
@@ -118,6 +147,7 @@ body {
 					}
 				}
 			}
+
 			& .swiper-button-next,
 			& .swiper-button-prev {
 				/* position: absolute */
